@@ -36,7 +36,7 @@ export default {
     },
     methods: {
         async convertCurrency() {
-            const apiKey = "7efcab883c9c819466a3468c";
+            const apiKey = import.meta.env.VITE_API_KEY;
             const url = `https://open.er-api.com/v6/latest/${this.fromCurrency}`;
             const response = await axios.get(url);
             const rate = response.data.rates[this.toCurrency];
