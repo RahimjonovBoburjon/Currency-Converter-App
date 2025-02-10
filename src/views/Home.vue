@@ -1,7 +1,7 @@
 <template>
     <div class="min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white p-4">
-        <div class="container mx-auto">
-            <h1 class="text-4xl font-bold text-center mb-6">Currency Converter 💱</h1>
+        <div class="container mx-auto max-w-2xl">
+            <h1 class="text-4xl font-bold text-center my-8">Currency Converter 💱</h1>
             <CurrencySelector @convert="handleConversion" />
             <ConversionResult :result="conversionResult" />
             <CurrencyChart :history="conversionHistory" />
