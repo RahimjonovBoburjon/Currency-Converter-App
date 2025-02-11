@@ -1,34 +1,16 @@
 <template>
-    <div class="min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white p-4">
-        <div class="container mx-auto max-w-2xl">
-            <h1 class="text-4xl font-bold text-center my-8">Currency Converter 💱</h1>
-            <CurrencySelector @convert="handleConversion" />
-            <ConversionResult :result="conversionResult" />
-            <CurrencyChart :history="conversionHistory" />
-        </div>
+    <div class="p-6">
+        <h1 class="text-2xl font-bold text-center mb-6">Currency Exchange App</h1>
+        <TradingChart symbol="USD/EUR" />
     </div>
 </template>
 
 <script>
-import CurrencySelector from "../components/CurrencySelector.vue";
-import ConversionResult from "../components/ConversionResult.vue";
-import CurrencyChart from "../components/CurrencyChart.vue";
+import TradingChart from "../components/CurrencyChart.vue"
 
 export default {
-    components: { CurrencySelector, ConversionResult, CurrencyChart },
-    data() {
-        return {
-            conversionResult: null,
-            conversionHistory: [],
-        };
-    },
-    methods: {
-        handleConversion(result, history) {
-            this.conversionResult = result;
-            this.conversionHistory = history;
-        },
+    components: {
+        TradingChart,
     },
 };
 </script>
-
-<style scoped></style>
