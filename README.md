@@ -11,7 +11,7 @@ This is a Vue.js application that displays real-time exchange rate charts using 
 
 ## Demo
 
-You can see a live demo of this application here: [Insert your demo link here]
+You can see a live demo of this application here: [Empty]
 
 ## Installation
 
