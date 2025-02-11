@@ -1,5 +1,35 @@
-# Vue 3 + Vite
+# Currency Exchange App
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This is a Vue.js application that displays real-time exchange rate charts using the **TradingView** widget. The user can select two currencies, and the app will display the exchange rate chart for the selected currency pair.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Features
+
+- View real-time exchange rate charts
+- Select the base and target currencies
+- Update the chart dynamically when currencies are changed
+- **TradingView** widget for visualizing the exchange rates
+
+## Demo
+
+You can see a live demo of this application here: [Insert your demo link here]
+
+## Installation
+
+### Prerequisites
+
+Ensure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/)
+- [npm](https://npmjs.com/)
+
+### Steps to Run the App Locally
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/RahimjonovBoburjon/currency-exchange-app.git
+
+cd currency-exchange-app
+npm install
+
+npm run dev
