@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import TradingChart from "../components/CurrencyChart.vue"
+import TradingChart from "../components/CurrencyChart.vue";
 
 export default {
     components: {

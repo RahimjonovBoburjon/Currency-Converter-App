@@ -1,7 +1,7 @@
 <template>
     <div class="bg-white text-black p-4 rounded-lg shadow-md mt-4">
         <h2 class="text-xl font-bold text-center mb-4">Exchange Rate Chart</h2>
-        <div id="tradingview-widget" class="h-100"></div>
+        <div id="tradingview-widget" class="h-96"></div>
     </div>
 </template>
 
@@ -10,7 +10,7 @@ export default {
     props: {
         symbol: {
             type: String,
-            default: "xau/usd",
+            default: "USD/EUR",
         },
     },
     mounted() {
@@ -22,7 +22,7 @@ export default {
         new window.TradingView.widget({
             container_id: "tradingview-widget",
             width: "100%",
-            height: "100%",
+            height: "400px",
             symbol: this.symbol.replace("/", ""),
             interval: "D", 
             timezone: "Etc/UTC",
@@ -31,7 +31,7 @@ export default {
             locale: "en",
             toolbar_bg: "#f1f3f6",
             enable_publishing: false,
-            hide_side_toolbar: false,
+            hide_side_toolbar: true,
         });
     },
 };
