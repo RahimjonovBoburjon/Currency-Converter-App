@@ -35,7 +35,7 @@ export default {
             }
             else if (currency === "UZS") {
                 this.selectedSymbol = "FX_IDC:USDUZS";
-            }   
+            }
             else if (currency === "JPY") {
                 this.selectedSymbol = "FX:USDJPY";
             }

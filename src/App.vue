@@ -6,6 +6,9 @@
       <ConversionResult :result="conversionResult" />
       <CurrencyChart :history="conversionHistory" />
     </div>
+    <div class="container mx-auto mt-4">
+      <NewsSection />
+    </div>
   </div>
 </template>
 
@@ -13,9 +16,10 @@
 import CurrencySelector from "./components/CurrencySelector.vue";
 import ConversionResult from "./components/ConversionResult.vue";
 import CurrencyChart from "./components/CurrencyChart.vue";
+import NewsSection from "./components/NewsSection.vue";
 
 export default {
-  components: { CurrencySelector, ConversionResult, CurrencyChart },
+  components: { CurrencySelector, ConversionResult, CurrencyChart, NewsSection },
   data() {
     return {
       conversionResult: null,
