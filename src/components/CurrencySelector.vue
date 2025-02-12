@@ -31,7 +31,7 @@ export default {
             amount: 1,
             fromCurrency: "USD",
             toCurrency: "EUR",
-            currencies: ["USD", "EUR", "GBP", "JPY", "AUD", "UZS"],
+            currencies: ["USD", "RUB", "UZS", "EUR", "GBP", "JPY", "AUD"],
         };
     },
     methods: {
