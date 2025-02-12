@@ -1,11 +1,12 @@
 <template>
     <div class="bg-white text-black p-4 rounded-lg shadow-md mt-4">
-        <h2 class="text-xl font-bold text-center mb-4">Exchange Rate Chart</h2> 
-        <select v-model="selectedCurrency" @change="updateChart" class="mb-4 p-2 border rounded">
-            <option v-for="currency in currencies" :key="currency" :value="currency">
+        <h2 class="text-xl font-bold text-center mb-4">Exchange Rate Chart</h2>
+        <div class="flex justify-center gap-2 mb-4">
+            <button v-for="currency in currencies" :key="currency" @click="selectedCurrency = currency"
+                class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition">
                 {{ currency }}
-            </option>
-        </select>
+            </button>
+        </div>
 
         <div v-if="selectedCurrency">
             <iframe :key="selectedCurrency"
@@ -23,11 +24,6 @@ export default {
             selectedCurrency: "USD",
             currencies: ["USD", "RUB", "UZS", "EUR", "GBP", "JPY", "AUD"]
         };
-    },
-    methods: {
-        updateChart() {
-            console.log(`Tanlangan valyuta: ${this.selectedCurrency}`);
-        }
     }
 };
 </script>
