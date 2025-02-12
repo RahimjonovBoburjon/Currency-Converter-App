@@ -22,7 +22,7 @@ export default {
     data() {
         return {
             selectedSymbol: "FX:EURUSD",
-            currencies: ["USD", "RUB", "UZS", "EUR", "GBP", "JPY", "AUD"]
+            currencies: ["USD", "RUB", "KZT", "UZS", "EUR", "GBP", "JPY", "AUD"]
         };
     },
     methods: {
@@ -32,6 +32,9 @@ export default {
             }
             else if (currency === "RUB") {
                 this.selectedSymbol = "FX_IDC:RUBUSD";
+            }
+            else if (currency === "KZT") {
+                this.selectedSymbol = "FX_IDC:KZTUSD";
             }
             else if (currency === "UZS") {
                 this.selectedSymbol = "FX_IDC:USDUZS";
