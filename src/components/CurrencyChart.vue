@@ -1,7 +1,7 @@
 <template>
     <div class="bg-white text-black p-4 rounded-lg shadow-md mt-4">
         <h2 class="text-xl font-bold text-center mb-4">Real-Time Exchange Rates 💹</h2>
-        <div class="flex justify-center gap-2 mb-4">
+        <div class="flex flex-wrap justify-center gap-2 mb-4">
             <button v-for="currency in currencies" :key="currency" @click="updateChart(currency)"
                 class="px-6 py-2 bg-indigo-500 text-white border-2 rounded-lg hover:bg-indigo-700 transition">
                 {{ currency }}

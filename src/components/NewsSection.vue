@@ -33,14 +33,13 @@ export default {
     methods: {
         async fetchNews() {
             try {
-                const response = await axios.get('https://newsapi.org/v2/top-headlines', {
+                const response = await axios.get('https://api.currentsapi.services/v1/latest-news', {
                     params: {
-                        country: 'us',
-                        category: 'business',
+                        language: 'en',
                         apiKey: import.meta.env.VITE_NEWS_API_KEY,
                     }
                 });
-                this.news = response.data.articles;
+                this.news = response.data.news;
             } catch (error) {
                 console.error('Error fetching news:', error);
             } finally {
